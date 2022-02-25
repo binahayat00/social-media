@@ -1534,6 +1534,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position:fixed;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2534,5 +2536,10 @@ header .uk-dropdown {
   .story-modal .story-modal-media img {
     position: absolute;
   }
+}
+
+.right-sidebar-user-suggestion {
+  position: fixed;  
+  width: 28%;
 }
  

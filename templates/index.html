@@ -28,8 +28,8 @@
                     <div class="left-side">
                         <!-- Logo -->
                         <div id="logo" class=" uk-hidden@s">
-                            <a href="home.html">
-                                <b><h1 style="text-transform: uppercase;">Social Book</h1></b>
+                            <a href="#">
+                                <b><h1 style="text-transform: uppercase;">Social Soccer</h1></b>
                             </a>
                         </div>
 
@@ -49,14 +49,14 @@
                         <a href="#"
                             class="bg-pink-500 flex font-bold hidden hover:bg-pink-600 hover:text-white inline-block items-center lg:block max-h-10 mr-4 px-4 py-2 rounded shado text-white">
                             <ion-icon name="add-circle" class="-mb-1
-                             mr-1 opacity-90 text-xl uilus-circle"></ion-icon> Upload Pics
+                             mr-1 opacity-90 text-xl uilus-circle"></ion-icon>New Post
                         </a>
                          <!-- upload dropdown box -->
                         <div uk-dropdown="pos: top-right;mode:click ; animation: uk-animation-slide-bottom-small" class="header_dropdown">
     
                             <!-- notivication header -->
                             <div class="px-4 py-3 -mx-5 -mt-4 mb-5 border-b">
-                                <h4>Upload Pics</h4>
+                                <h4>Upload New Post</h4>
                             </div>
     
                             <!-- notification contents -->
@@ -176,6 +176,7 @@
                         </a>
                         <div uk-drop="mode: click;offset:9" class="header_dropdown profile_dropdown border-t">
                             <ul>
+                                <li><a href="/profile/{{user_profile}}">My Profile</a></li>
                                 <li><a href="/settings"> Account setting </a> </li>
                                 <li><a href="logout"> Log Out</a></li>
                             </ul>
@@ -189,14 +190,13 @@
 
                 <!--<h1 class="lg:text-2xl text-lg font-extrabold leading-none text-gray-900 tracking-tight mb-5"> Feed </h1>--->
 
-                <div class="lg:flex justify-center lg:space-x-10 lg:space-y-0 space-y-5">
+                <div class="lg:flex justify-center lg:space-x-10 lg:space-y-0 space-y-5 mt-6">
 
                     <!-- left sidebar-->
                     <div class="space-y-5 flex-shrink-0 lg:w-7/12">
 
                         <!-- post 1-->
-
-                        {% for post in posts reversed %}
+                        {% for post in feed_list reversed %}
                         <div class="bg-white shadow rounded-md  -mx-2 lg:mx-0">
     
                             <!-- post header-->
@@ -298,7 +298,7 @@
                                 </div> -->
 
                                 <p>
-                                    <a href="/profile/{{post.user}}"><strong>{{post.user}}</strong></a> {{post.caption}}
+                                    <a href="/profile/{{post.user}}"><strong>{{post.user}}:</strong></a> {{post.caption}}
                                 </p>
 
                                 <!-- <div class="border-t pt-4 space-y-4 ">
@@ -345,7 +345,7 @@
                     <!-- right sidebar-->
                     <div class="lg:w-5/12">
 
-                        <div class="bg-white  shadow-md rounded-md overflow-hidden">
+                        <div class="right-sidebar-user-suggestion bg-white  shadow-md rounded-md overflow-hidden">
 
                             <div class="bg-gray-50  border-b border-gray-100 flex items-baseline justify-between py-4 px-6 ">
                                 <h2 class="font-semibold text-lg">Users You Can Follow</h2>
