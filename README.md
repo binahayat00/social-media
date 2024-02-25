@@ -1,10 +1,10 @@
-# social-media
-this is a Social Media for football lovers in all of world
+# Social-media
+This is a Social Media for football lovers all over the world
 
-you can use it and share.
+You can use it and share it.
 
-It is written by Django framework and Python language
+It is written in Django framework and Python language
 
-by Amir Reza Zare
+By Amir Reza Zare
 
-hope you enjoy it
+Hope you enjoy it
