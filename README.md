@@ -1,5 +1,5 @@
 # Social-media
-This is a Social Media for football lovers all over the world
+## This is a Social Media for football lovers all over the world
 
 You can use it and share it.
 
